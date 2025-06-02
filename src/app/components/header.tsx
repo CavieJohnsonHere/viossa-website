@@ -13,7 +13,7 @@ export default function Header() {
     { name: "Home", link: "/" },
     { name: "Resources", link: "/resources" },
     { name: "Community", link: "/community" },
-    { name: "Contribute", link: "/b" },
+    { name: "Culture", link: "/culture" },
     { name: "Lorem", link: "/c" },
   ];
 
