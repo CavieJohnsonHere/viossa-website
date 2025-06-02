@@ -1,6 +1,6 @@
 # Viossa
 
-This is a prototype for viossa.net
+This is a prototype for viossa.net. The main repo is [here](https://github.com/ViossaDiskordServer/ViossaDotNet).
 
 Viossa is an international conlang pidget language. You can learn more by running thew code!
 
