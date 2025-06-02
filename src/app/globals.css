@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-viossa-50: #effaff;
+  --color-viossa-100: #def3ff;
+  --color-viossa-200: #b6eaff;
+  --color-viossa-300: #75dcff;
+  --color-viossa-400: #2ccbff;
+  --color-viossa-500: #00bbff;
+  --color-viossa-600: #0091d4;
+  --color-viossa-700: #0073ab;
+  --color-viossa-800: #00618d;
+  --color-viossa-900: #065174;
+  --color-viossa-950: #04334d;
+}
+
+.material-symbols-outlined {
+  @apply select-none;
+}
