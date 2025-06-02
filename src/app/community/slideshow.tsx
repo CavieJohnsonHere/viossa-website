@@ -27,15 +27,15 @@ export default function Slideshow() {
         </div>
 
         {/* Other stuff */}
-        <div className="md:h-40">
-          <div className="h-20 border-t border-black/5 p-2">
+        <div className="md:h-40 pb-4">
+          <div className="h-18 border-t border-black/5 p-2">
             <div className="text-2xl">Discord Hangout</div>
             <div>
               Casual ∙ Discord, June 5th
               <Button className="ml-2 text-base !px-2 !py-1">Learn more</Button>
             </div>
           </div>
-          <div className="h-20 border-t border-black/5 p-2">
+          <div className="h-18 border-t border-black/5 p-2">
             <div className="text-2xl">Lorem Ipsum</div>
             <div>
               Casual ∙ Nepal, June 14th
