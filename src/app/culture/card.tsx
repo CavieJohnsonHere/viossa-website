@@ -22,7 +22,7 @@ export default function Card({
       <div className={`font-black text-6xl w-fit ${textClassName} bg-clip-text text-transparent`}>
         {title}
       </div>
-      <div className="mt-5 text-xl w-fit bg-gradient-to-r from-indigo-900 to-cyan-800 bg-clip-text text-transparent">
+      <div className={`mt-5 text-xl w-fit ${textClassName} bg-clip-text text-transparent`}>
         {desc}
       </div>
     </div>

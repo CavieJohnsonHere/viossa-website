@@ -4,22 +4,24 @@ import { usePathname } from "next/navigation";
 import HeaderOption from "./header-option";
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
   const pathname = usePathname();
   const [droppedDown, setDroppedDown] = useState(false);
+  const router = useRouter();
 
   const options: { name: string; link: string }[] = [
     { name: "Home", link: "/" },
     { name: "Resources", link: "/resources" },
     { name: "Community", link: "/community" },
     { name: "Culture", link: "/culture" },
-    { name: "Lorem", link: "/c" },
+    { name: "Learn", link: "/learn" },
   ];
 
   return (
     <header className="h-16 flex">
-      <img src="/Viossa_Flag.png" alt="Viossa's Flag" className="h-full" />
+        <img src="/Viossa_Flag.png" alt="Viossa's Flag" className="h-full" onClick={() => router.push("/")} />
       <div className="w-full h-full flex bg-viossa-500 text-viossa-950">
         <div className="text-4xl font-black items-center h-full -translate-x-2 hidden lg:flex">
           Viossa
@@ -59,7 +61,13 @@ export default function Header() {
                   (v, i) =>
                     pathname != v.link && (
                       <Link key={i} href={v.link}>
-                        <div className={`p-2 border-b border-black/10 hover:bg-viossa-800 transition text-center ${i === options.length - 1 && "rounded-b-2xl"}`}>{v.name}</div>
+                        <div
+                          className={`p-2 border-b border-black/10 hover:bg-viossa-800 transition text-center ${
+                            i === options.length - 1 && "rounded-b-2xl"
+                          }`}
+                        >
+                          {v.name}
+                        </div>
                       </Link>
                     )
                 )}

@@ -3,6 +3,7 @@ import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import Header from "./components/header";
+import NextTopLoader from "nextjs-toploader"
 
 const notoSans = Noto_Sans({
   variable: "--font-noto-sans",
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${notoSans.variable} antialiased bg-viossa-950 min-h-screen`}
       >
+        <NextTopLoader color="#vffaff" height={5} />
         <Header />
         {children}
       </body>
